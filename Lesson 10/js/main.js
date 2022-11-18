@@ -29,7 +29,7 @@ const forLoopFnc = function () {
 
         accardionText.innerHTML = arr[i].accText;
 
-        accardionBtn.addEventListener('click', function() {
+        accardionBtn.addEventListener('click', function () {
             accardionText.classList.add('para-not');
         });
 
@@ -41,3 +41,9 @@ const forLoopFnc = function () {
 
 
 forLoopFnc();
+
+
+
+let date = new Date().getDate()
+
+console.log(date);
