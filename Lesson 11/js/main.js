@@ -9,13 +9,18 @@ let currentMonth = 11;
 form.addEventListener('submit', function (e) {
     e.preventDefault()
     let intVal = int.value;
-    console.log(intVal.split("-"));
+    let intArr = intVal.split("-");
 
-    let month = intVal[0] - currentMonth;
+    for (let i = 0; i < intArr.length; i++) {
+        const element = intArr[i];
+        console.log(element);
+    }
+    let year = intVal[0] - currentYear;
     let day = intVal[1] - currentDay;
-    let year = intVal[2] - currentYear;
+    let month = intVal[2] - currentMonth;
 
     console.log(year);
     console.log(day);
     console.log(month);
+
 })
